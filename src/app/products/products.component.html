@@ -1,0 +1,22 @@
+<div *ngFor="let p of products">
+    <div class = "product-container">
+        <div class="image-container"> <img [src] = "p.image" style="max-height: 50px; max-width: 50px"></div>
+           <div>
+               <div class="name-container" [ngStyle] ="{color: p.available === 'Available' ? 'DarkBlue' : 'Green'}"><h5><b>Product Name:</b> {{ p.name }} </h5></div>
+                <div class="details-container" >
+                   <div class="details"><b>price:</b> ${{ p.price }}</div>
+                    <div class="details"><b>color:</b> {{ p.color }}</div>
+                     <div class="details"  [ngStyle]="{color: p.available === 'Available' ? 'Orange' : 'Red'}"><b>Availability:</b> {{ p.available }}</div> </div>
+           </div>
+                    <div class="options">
+                    <button class = "btn btn-success" style='margin-right:16px;'>Show Details</button>
+                      <button class="btn btn-warning"  *ngIf = "p.available === 'Available'; else notifyme"> Buy Now</button>
+                     <ng-template #notifyme>
+                        <button class="btn btn-danger">Notify Me</button>
+                     </ng-template>
+                    </div>
+        <br>
+       
+    </div>
+</div>
+

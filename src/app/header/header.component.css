@@ -1,0 +1,22 @@
+.header{
+    display: grid;
+    background-color: azure;
+    
+}
+.site-image
+{
+    height: 20px;
+    width: 100px;
+}
+.site-slogan
+{
+    text-align:center;
+    padding-left:550px;
+    
+}
+h2{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    
+}

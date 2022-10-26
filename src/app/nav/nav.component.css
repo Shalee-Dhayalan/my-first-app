@@ -1,0 +1,28 @@
+.navbar
+{
+   
+    background-color: bisque;
+    border: 0vmax;
+    text-align: center;
+}
+.site-name{
+    padding: 5px 30px;
+    font-size: medium;
+    text-align:center;
+    color: blueviolet;
+}
+.site-menu
+{
+    
+    color:brown;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+}
+a{
+    color: crimson;
+    text-decoration: none;
+    margin: 100px;
+    margin-left: 10px;
+    margin-right: 90px;
+}
